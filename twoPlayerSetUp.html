@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang = "en">
+   <head>
+      <meta charset="UTF-8">
+      <title>Snake World</title>
+      <link rel="stylesheet" href="MyStyle.css">
+      <link rel="shortcut icon" href="SnakeWorldFavicon.ico">
+   </head>
+
+   <body>
+     <nav>
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="onePlayerSetUp.html">One Player Mode</a></li>
+				<li><a href="twoPlayerSetUp.html">Two Player Mode</a></li>
+			</ul>
+		</nav>
+    <h1>Two Player Snake</h1>
+    <h2>Objective</h2>
+    <p>
+      The object of the game is to survive as long as you can while trying to kill the other snake.
+      A snake can die by colliding its head into a wall, itself, or another snake.
+    </p>
+    <h2>Controls</h2>
+    <p>
+      Write in each text box for what you want your controls to be for each direction. The game will start as soon as "Play Game" is pressed, so be ready to control your snake when the game starts.
+      Player 1 controls the snake in the upper left corner, while Player 2 controls the snake in the lower right corner.
+    </p>
+    <h3>Player 1</h3>
+    <ul id="direction">
+      <li><span>UP</span></li>
+      <li><span>DOWN</span></li>
+      <li><span>LEFT</span></li>
+      <li><span>RIGHT</span></li>
+    </ul>
+    <ul id="controls">
+      <li><input type="text" id="up1" value="w" maxlength="1"></li>
+      <li><input type="text" id="down1" value="s" maxlength="1"></li>
+      <li><input type="text" id="left1" value="a" maxlength="1"></li>
+      <li><input type="text" id="right1" value="d" maxlength="1"></li>
+    </ul>
+    <h3>Player 2</h3>
+    <ul id="direction">
+      <li><span>UP</span></li>
+      <li><span>DOWN</span></li>
+      <li><span>LEFT</span></li>
+      <li><span>RIGHT</span></li>
+    </ul>
+    <ul id="controls">
+      <li><input type="text" id="up2" value="i" maxlength="1"></li>
+      <li><input type="text" id="down2" value="k" maxlength="1"></li>
+      <li><input type="text" id="left2" value="j" maxlength="1"></li>
+      <li><input type="text" id="right2" value="l" maxlength="1"></li>
+    </ul>
+    <input type="button" id="startButton" value="Play Game" onclick="doClick()">
+    <div id="sketch-holder"></div>
+    <div id="scoreInfo">
+      <p>Score Information:</p>
+      <p id="player1Score"></p>
+      <p id="player2Score"></p>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.2/p5.js"></script>
+    <script src="twoPlayer.js"></script>
+   </body>
+</html>

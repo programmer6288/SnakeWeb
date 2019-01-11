@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang = "en">
+   <head>
+      <meta charset="UTF-8">
+      <title>Snake World</title>
+      <link rel="stylesheet" href="MyStyle.css">
+      <link rel="shortcut icon" href="SnakeWorldFavicon.ico">
+   </head>
+
+   <body>
+     <nav id=>
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="onePlayerSetUp.html">One Player Mode</a></li>
+				<li><a href="twoPlayerSetUp.html">Two Player Mode</a></li>
+			</ul>
+		</nav>
+    <h1>One Player Snake</h1>
+    <h2>Objective</h2>
+    <p>
+      The object of the game is eat food to get as long as you can without dying.
+      A snake can die by colliding its head into a wall or itself.
+    </p>
+    <h2>Controls</h2>
+    <p>
+      Write in each text box for what you want your controls to be for each direction.
+    </p>
+    <ul id="direction">
+      <li><span>UP</span></li>
+      <li><span>DOWN</span></li>
+      <li><span>LEFT</span></li>
+      <li><span>RIGHT</span></li>
+    </ul>
+    <ul id="controls">
+      <li><input type="text" id="up" value='w' maxlength="1"></li>
+      <li><input type="text" id="down" value="s" maxlength="1"></li>
+      <li><input type="text" id="left" value="a" maxlength="1"></li>
+      <li><input type="text" id="right" value="d" maxlength="1"></li>
+    </ul>
+    <input type="button" id="startButton" value="Play Game" onclick="doClick()">
+    <div id="sketch-holder"></div>
+    <div id="scoreInfo">
+      <p>Score Information:</p>
+      <p id="currentScore"></p>
+      <p id="bestScore"></p>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.2/p5.js"></script>
+    <script src="onePlayer.js"></script>
+   </body>
+</html>
